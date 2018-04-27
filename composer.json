@@ -1,0 +1,8 @@
+{
+  "name": "oreolek/ticketauth",
+  "type": "mediawiki-extension",
+  "license": "GPL-v3.0",
+  "require": {
+    "composer/installers": "1.*,>=1.0.1"
+  }
+}
