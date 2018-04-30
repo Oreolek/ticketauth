@@ -87,11 +87,13 @@ function efTktAuth_OnUserLoadFromSession ( $user, &$result )
     die( $error );
   }
 
+  /*
   if ( $timestamp + ((int) $GLOBALS['wgTktAuth_TicketExpiryMinutes']) * 60 < time() ) {
     $error = 'TicketAuth: Provided ticket has expired. ';
     wfDebug( $error . "\n" );
     die( $error . 'Please, refresh the web page that has generated this link and retry.' );
   }
+   */
 
   if ( $password != '' && !preg_match( '/^[0-9a-f]{32}$/i', $password ) ) {
     $error = 'TicketAuth: Invalid password MD5 hash was provided.';
